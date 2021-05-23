@@ -1,0 +1,86 @@
+<!-- Breadcrumb End -->
+<div class="container-fluid tracking">
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <h2 style="color:green"> <i class="fa fa-thumbs-up" aria-hidden="true"></i>Your Order Placed Successfully</h2>
+      <div class="shopping-cart">
+        <div class="product">
+          <div class="product-image">
+            <img src="../assets/img/Ace-Web_97.png">
+          </div>
+          <div class="product-details">
+            <div class="product-title">VACCUM</div>
+            <p class="product-description">Weber Genesis II 3-burner Gas Grill, E310</p>
+            <p></p>
+            <p></p>
+            <a _ngcontent-kvx-c57="" href="#" class="btn btn-primary invoice-btn btn-block"><i _ngcontent-kvx-c57=""
+                class="fa fa-file"></i> Download Invoice </a>
+
+          </div>
+          <ul class="list-group  cart-order mb-3">
+            <li style="    border-bottom: 1px solid #eae9e9;" class=" d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Price (2 item)</h6>
+
+              </div>
+              <span class="heading-color">340 KWD</span>
+
+            </li>
+
+            <li class=" d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Discount item</h6>
+
+              </div>
+              <span class="heading-color">20 KWD</span>
+
+            </li>
+            <li class=" d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Delivery Charges</h6>
+              </div>
+              <span class="heading-color">10 KWD</span>
+
+            </li>
+            <li style="    border-bottom: 1px solid #eae9e9;" class=" d-flex justify-content-between">
+              <span>Total Amount </span>
+              <strong class="heading-color">320 KWD</strong>
+            </li>
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="product">
+        <p style="font-size: 20px;border-bottom: 1px solid #c1c1c1;"> <span class="heading-color">Track Your Order
+          </span> <span>(Expected Delivery Oct 8)</span></p>
+
+        <div class="container " style="padding:56px">
+          <span *ngFor="let item of counts;let i = index">
+            <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ item }}</span>
+            <span class="circles" [class.active]="orderStatus == item"></span>
+            <span class="bar" *ngIf="(i != counts.length-1)"></span>
+          </span>
+          <p style="font-size: 20px;border-bottom: 1px solid #c1c1c1;">Your Item has been packed</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p style="color: #304fc3;"> <i class="fa fa-star" aria-hidden="true"></i>Rate & Review Product</p>
+          </div>
+          <div class="col-md-6">
+            <p style="float: right;    color: #304fc3;"> <i class="fa fa-question-circle" aria-hidden="true"></i>Rate &
+              Review Product</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- Category End-->

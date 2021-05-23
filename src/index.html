@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACE</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="eCommerce HTML Template Free Download" name="keywords">
+  <meta content="eCommerce HTML Template Free Download" name="description">
+  <base href="/">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- CSS Libraries -->
+  <link href="../assets/css/stackpath-bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="../assets/lib/slick/slick.css" rel="stylesheet">
+  <link href="../assets/lib/slick/slick-theme.css" rel="stylesheet">
+  <link href="../assets/css/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/responsive.css" rel="stylesheet">
+  <link href="../assets/css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+
+<app-root></app-root>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/lib/easing/easing.min.js"></script>
+  <script src="../assets/lib/slick/slick.min.js"></script>
+  <script src="../assets/css/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    function logo(){
+
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    arrows: true,
+    dots: false,
+    pauseOnHover: false,
+    prevArrow: '<i class="slick-prev fas fa-angle-left"></i>',
+    nextArrow: '<i class="slick-next fas fa-angle-right"></i>',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+    });
+  });
+    }
+
+function fatClientCheck() {
+  var sliderSelector = '.swiper-container',
+    options = {
+      init: false,
+      loop: true,
+      speed:800,
+      slidesPerView: 2, // or 'auto'
+      // spaceBetween: 10,
+      centeredSlides : true,
+      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+      coverflowEffect: {
+        rotate: 50, // Slide rotate in degrees
+        depth: 0, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multipler
+        slideShadows : true, // Enables slides shadows
+      },
+      grabCursor: true,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1023: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      },
+      // Events
+      on: {
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+        }
+      }
+    };
+var mySwiper = new Swiper(sliderSelector, options);
+
+// Initialize slider
+mySwiper.init();
+}
+    // Params
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.address-lable{
+  padding: 10px;
+}
+.address-lable label{
+  width: 116px;
+}
+
+.address-lable span{
+ color: #c43b2a;
+}
