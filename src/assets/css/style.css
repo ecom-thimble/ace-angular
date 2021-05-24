@@ -2870,13 +2870,11 @@ h3 {
 .pattern-color {
   color: #e74b14;
 }
-.about-us .content .icon-box:first-child {
-  border-left: 1px solid #e6d7d7;
-}
 .about-us .content .icon-box {
   margin-top: 25px;
-  border-right: 1px solid #e6d7d7;
+  border: 1px solid #e6d7d7;
   border-radius: 10px;
+  padding: 16px;
 }
 .service-image {
   float: left;
@@ -3059,7 +3057,7 @@ padding: 10px;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: black;
+  background: #f6f6f6;
 }
 #footer {
   color: #b4aca8;
@@ -3083,7 +3081,7 @@ padding: 10px;
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #d40029;
   position: relative;
   padding-bottom: 12px;
 }
@@ -3104,7 +3102,7 @@ padding: 10px;
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #d40029;
   position: relative;
   padding-bottom: 12px;
 }
@@ -3207,7 +3205,7 @@ color: red;
 .services-list .icon-box{
   padding: 0px;
   text-align: center;
-  border: 1px solid #ebe6e4;
+  /* border: 1px solid #ebe6e4; */
   height: 369px;
   position: relative;
   margin-bottom: 33px;
