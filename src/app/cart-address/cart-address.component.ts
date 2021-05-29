@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 import { CartService } from '../cart.service';
+declare function formJs(): any;
 
 @Component({
   selector: 'app-cart-address',
@@ -24,5 +25,6 @@ export class CartAddressComponent {
     this.items = this.cartService.clearCart();
     console.warn('Your order has been submitted', this.checkoutForm.value);
     this.checkoutForm.reset();
+    formJs()
   }
 }
