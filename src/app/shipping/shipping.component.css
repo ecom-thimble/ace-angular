@@ -4,7 +4,24 @@
   .address-lable label{
     width: 116px;
   }
-  
+   .border-line{
+    border-bottom: 1px solid #c1c1c1;
+  }
+  .border-line h4{
+    padding: 17px;
+  }
+  .address-type{
+    padding: 17px;
+  }
+  .ellipse-icon i{
+    float: right;
+    padding: 22px;
+    color: #c5402a;
+    font-size: 20px;
+  }
+  .color-gray{
+    color: gray;
+  }
   .headingLabel{
    color: #c43b2a;
   }
@@ -153,5 +170,9 @@
   .user-icon span{
     margin: 7px;
     color: #c5402a;
+  }
+  .payment-box{
+    padding: 15px;
+    border: 1px solid red;
   }
   

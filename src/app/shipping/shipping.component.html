@@ -1,570 +1,531 @@
- <!-- My Account Start -->
- <div class="my-account">
+<!-- My Account Start -->
+<div class="my-account">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="nav flex-column nav-pills " role="tablist"  style=" box-shadow: 0 4px 16px rgb(0 0 0 / 10%)" aria-orientation="vertical">
-                  <a class="user-icon">
-                      <img width="72" class="rounded-circle" src="../assets/img/user.jpg" alt="">
-                      <span>
-  Hello,   Jhon Smith
-                      </span>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="nav flex-column nav-pills " role="tablist" style=" box-shadow: 0 4px 16px rgb(0 0 0 / 10%)"
+            aria-orientation="vertical">
+            <a class="user-icon">
+              <img width="72" class="rounded-circle" src="../assets/img/user.jpg" alt="">
+              <span>
+                Hello, Jhon Smith
+              </span>
   
-                  </a>
-                    <a class="nav-link active" id="orders-nav" data-toggle="pill" href="#orders-tab" role="tab"><i
-                            class="fa fa-shopping-bag"></i>My Orders</a>
-                    <a class="nav-link " id="profile-nav" data-toggle="pill" href="#profile-tab" role="tab"><i
-                            class="fa fa-user"></i>Profile Information</a>
-                    <a class="nav-link " id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i
-                            class="fa fa-map-marker-alt"></i>Manage Addresses</a>
-                    <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i
-                            class="fa fa-credit-card"></i>Payment Method</a>
-                    <a class="nav-link" id="" data-toggle="pill" href="" role="tab"><i
-                            class="fa fa-shopping-cart"></i>Support</a>
-                    <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab"role="tab"><i
-                            class="fa fa-heart"></i>My Wishilist</a>
-                    <a class="nav-link" href="index.html"><i class="fa fa-sign-out-alt"></i>Logout</a>
+            </a>
+            <a class="nav-link active" id="orders-nav" data-toggle="pill" href="#orders-tab" role="tab"><i
+                class="fa fa-shopping-bag"></i>My Orders</a>
+            <a class="nav-link " id="profile-nav" data-toggle="pill" href="#profile-tab" role="tab"><i
+                class="fa fa-user"></i>Profile Information</a>
+            <a class="nav-link " id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i
+                class="fa fa-map-marker-alt"></i>Manage Addresses</a>
+            <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i
+                class="fa fa-credit-card"></i>Payment Method</a>
+            <a class="nav-link" id="" data-toggle="pill" href="" role="tab"><i class="fa fa-shopping-cart"></i>Support</a>
+            <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i
+                class="fa fa-heart"></i>My Wishilist</a>
+            <a class="nav-link" href="index.html"><i class="fa fa-sign-out-alt"></i>Logout</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="tab-content">
+            <!-- <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
+  
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row credit payment-box">
+                      <div class="left" style="display: inline-flex;">
+                        <input id="cd" type="radio" name="payment" />
+                        <div class="radio"></div>
+                        <label for="cd">Debit/ Credit Card</label>
+  
+                      </div>
+                      <p>
+                        gfdsgkdgksvksfsfsklsgfksfksfvs
+                      </p>
+  
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row paypal  payment-box">
+                      <div class="left" style="display: inline-flex;">
+                        <input id="pp" type="radio" name="payment" />
+                        <div class="radio"></div>
+                        <label for="pp">Paypal</label>
+  
+                      </div>
+                      <p>
+                        gfdsgkdgksvksfsfsklsgfksfksfvs
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+  
+  
+            </div> -->
+            <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
+              <div class="col-lg-12">
+                <div class="row orders-tab">
+                  <div class="col-md-6">
+                    <a href="#" class="btn btn-primary cancel-btn btn-block">Manage Addresses </a>
+  
+                  </div>
+                  <div class="col-md-6">
+                    <a href="#" class="btn btn-block" style="  color: #000;
+                              background-color: #e6ebf1;
+                              border-color: #e6ebf1;"> + Add a New Address</a>
+                  </div>
+                </div>
+                <div class="checkout-inner">
+                  <div class="billing-address">
+                    <div class="row border-line">
+                      <div class="col-md-8">
+                        <h4 class="heading-color ">Home</h4>
+                      </div>
+                      <div class="col-md-4 ellipse-icon">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+  
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="address-type">
+  
+  
+                        <p>Jhon Smith <span class="color-gray"> +9654555028</span></p>
+                        <p class="color-gray">Hamad Abdallah Hassan, Al-Sabbahiya, B.p, 48001, P.o,Box number - 54551</p>
+                        <p class="color-gray">KUWAIT</p>
+                      </div>
+                    </div>
+  
+                    <!-- <div class="row">
+                      <div class="col-md-6">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                          <label for="shipping-first-name">First Name</label>
+                        </p>
+                      </div>
+                      <div class="col-md-6 ">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+                          <label for="shipping-last-name">Last Name</label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                          <label for="shipping-first-name">Pincode</label>
+                        </p>
+                      </div>
+                      <div class="col-md-6 ">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+                          <label for="shipping-last-name">Locality</label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                          <label for="shipping-first-name">Address</label>
+                        </p>
+                      </div>
+  
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                          <label for="shipping-first-name">Landmark</label>
+                        </p>
+                      </div>
+                      <div class="col-md-6 ">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+                          <label for="shipping-last-name">City/District/Town</label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                          <label for="shipping-first-name">Mobile No</label>
+                        </p>
+                      </div>
+                      <div class="col-md-6 ">
+                        <p class="input-wrapper lg-half">
+                          <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+                          <label for="shipping-last-name">Alternate Mobile No</label>
+                        </p>
+                      </div>
+                    </div> -->
+  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="checkout-inner">
+                  <div class="billing-address">
+                    <div class="row border-line">
+                      <div class="col-md-8">
+                        <h4 class="heading-color ">Office</h4>
+                      </div>
+                      <div class="col-md-4 ellipse-icon">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+  
+                      </div>
+                    </div>
+  
+  
+                    <div class="row">
+                      <div class="address-type">
+  
+  
+                        <p>Jhon Smith <span class="color-gray"> +9654555028</span></p>
+                        <p class="color-gray">Hamad Abdallah Hassan, Al-Sabbahiya, B.p, 48001, P.o,Box number - 54551</p>
+                        <p class="color-gray">KUWAIT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="checkout-inner">
+                  <div class="billing-address">
+                    <div class="row border-line">
+                      <div class="col-md-8">
+                        <h4 class="heading-color ">Guest House</h4>
+                      </div>
+                      <div class="col-md-4 ellipse-icon">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+  
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="address-type">
+  
+  
+                        <p>Jhon Smith <span class="color-gray"> +9654555028</span></p>
+                        <p class="color-gray">Hamad Abdallah Hassan, Al-Sabbahiya, B.p, 48001, P.o,Box number - 54551</p>
+                        <p class="color-gray">KUWAIT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-9">
-                <div class="tab-content">
-                    <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
-                        <div class="col-lg-12">
-                          <div class="row orders-tab">
-                            <div class="col-md-6">
-                                <a href="#" class="btn btn-primary cancel-btn btn-block">Manage Addresses </a>
+            <div class="tab-pane fade active show" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
+              <!-- ========================= SECTION PAGETOP ========================= -->
   
+              <div class="row orders-tab">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary cancel-btn btn-block">Ongoing Orders </a>
+  
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary btn-block"> Cancelled Orders</a>
+                </div>
+              </div>
+  
+              <article class="card card-product-list">
+                <div class="row no-gutters">
+                  <aside class="col-md-3">
+                    <a href="#" class="img-wrap">
+                      <span class="badge badge-danger"> NEW </span>
+                      <img src="../assets/img/Ace-Web_95.png">
+                    </a>
+                  </aside> <!-- col.// -->
+                  <div class="col-md-6">
+                    <div class="info-main">
+                      <a href="#" class="h5 title"> AIR PURIFIER
+                      </a>
+                      <div class="rating-wrap mb-3">
+                        <ul class="rating-stars">
+                          <li>
+                            <div class="gender-radio">
+                              <label class="custom-label" for="newaccount">Color:</label>
+                              <input type="radio" name="selector" checked>
                             </div>
-                            <div class="col-md-6">
-                                <a href="#" class="btn btn-block" style="  color: #000;
-                                background-color: #e6ebf1;
-                                border-color: #e6ebf1;"> + Add a New Address</a>
+                          </li>
+                          <li class="">
+                            Size: 30 inch
+                          </li>
+                          <li style="width:80%" class="">
+                            QTY: 1
+                          </li>
+  
+  
+                        </ul>
+  
+                      </div> <!-- rating-wrap.// -->
+  
+                      <p> Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
+                      <div class="price-wrap">
+  
+                        <span class="price h5"> 300KWD </span>
+                        <del class="price-old"> 400KWD</del>
+                      </div> <!-- info-price-detail // -->
+                    </div> <!-- info-main.// -->
+                  </div> <!-- col.// -->
+                  <aside class="col-sm-3">
+                    <div class="info-aside">
+  
+  
+                      <p>
+                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i class="fa fa-file"></i> Download
+                          Invoice </a>
+                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
+                          Cancellation </a>
+  
+                        <a href="#" class="btn btn-primary order-btn btn-block">
+                          <span class="text">Track Order</span>
+                        </a>
+                      </p>
+                    </div> <!-- info-aside.// -->
+                  </aside> <!-- col.// -->
+                </div> <!-- row.// -->
+              </article> <!-- card-product .// -->
+  
+  
+              <article class="card card-product-list">
+                <div class="row no-gutters">
+                  <aside class="col-md-3">
+                    <a href="#" class="img-wrap">
+                      <span class="badge badge-danger"> NEW </span>
+                      <img src="../assets/img/Ace-Web_97.png">
+                    </a>
+                  </aside> <!-- col.// -->
+                  <div class="col-md-6">
+                    <div class="info-main">
+                      <a href="#" class="h5 title"> VACCUM </a>
+                      <div class="rating-wrap mb-3">
+                        <ul class="rating-stars">
+                          <li>
+                            <div class="gender-radio">
+                              <label class="custom-label" for="newaccount">Color:</label>
+                              <input type="radio" name="selector" checked>
                             </div>
-                        </div>
-                            <div class="checkout-inner">
-                                <div class="billing-address">
-                                    <h4 class="heading-color ">Home</h4>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">First Name</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Last Name</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Pincode</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Locality</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Address</label>
-                                      </p>
-                                    </div>
+                          </li>
+                          <li class="">
+                            Size: 30 inch
+                          </li>
+                          <li style="width:80%" class="">
+                            QTY: 1
+                          </li>
   
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Landmark</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">City/District/Town</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Mobile No</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Alternate Mobile No</label>
-                                      </p>
-                                    </div>
-                                    </div>
   
-                                </div>
+                        </ul>
+  
+                      </div> <!-- rating-wrap.// -->
+  
+                      <p> Weber Genesis II 3-burner Gas Grill, E310 </p>
+                      <div class="price-wrap">
+  
+                        <span class="price h5"> $140 </span>
+                        <del class="price-old"> $198</del>
+                      </div> <!-- info-price-detail // -->
+                    </div> <!-- info-main.// -->
+                  </div> <!-- col.// -->
+                  <aside class="col-sm-3">
+                    <div class="info-aside">
+  
+  
+                      <p>
+                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i class="fa fa-file"></i> Download
+                          Invoice </a>
+                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
+                          Cancellation </a>
+  
+                        <a href="#" class="btn btn-primary order-btn btn-block">
+                          <span class="text">Track Order</span>
+                        </a>
+                      </p>
+                    </div> <!-- info-aside.// -->
+                  </aside> <!-- col.// -->
+                </div> <!-- row.// -->
+              </article> <!-- card-product .// -->
+              <article class="card card-product-list">
+                <div class="row no-gutters">
+                  <aside class="col-md-3">
+                    <a href="#" class="img-wrap">
+                      <span class="badge badge-danger"> NEW </span>
+                      <img src="../assets/img/Ace-Web_99.png">
+                    </a>
+                  </aside> <!-- col.// -->
+                  <div class="col-md-6">
+                    <div class="info-main">
+                      <a href="#" class="h5 title"> BLENDER </a>
+                      <div class="rating-wrap mb-3">
+                        <ul class="rating-stars">
+                          <li>
+                            <div class="gender-radio">
+                              <label class="custom-label" for="newaccount">Color:</label>
+                              <input type="radio" id="f-option" name="selector" checked="">
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="checkout-inner">
-                                <div class="billing-address">
-                                    <h4 class="heading-color ">Office</h4>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">First Name</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Last Name</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Pincode</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Locality</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Address</label>
-                                      </p>
-                                    </div>
+                          </li>
+                          <li class="">
+                            Size: 30 inch
+                          </li>
+                          <li style="width:80%" class="">
+                            QTY: 1
+                          </li>
   
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Landmark</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">City/District/Town</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Mobile No</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Alternate Mobile No</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                </div>
+  
+                        </ul>
+  
+                      </div> <!-- rating-wrap.// -->
+  
+                      <p> Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
+                      <div class="price-wrap">
+  
+                        <span class="price h5"> $140 </span>
+                        <del class="price-old"> $198</del>
+                      </div> <!-- info-price-detail // -->
+                    </div> <!-- info-main.// -->
+                  </div> <!-- col.// -->
+                  <aside class="col-sm-3">
+                    <div class="info-aside">
+  
+  
+                      <p>
+                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i class="fa fa-file"></i> Download
+                          Invoice </a>
+                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
+                          Cancellation </a>
+  
+                        <a href="#" class="btn btn-primary order-btn btn-block">
+                          <span class="text">Track Order</span>
+                        </a>
+                      </p>
+                    </div> <!-- info-aside.// -->
+                  </aside> <!-- col.// -->
+                </div> <!-- row.// -->
+              </article> <!-- card-product .// -->
+              <article class="card card-product-list">
+                <div class="row no-gutters">
+                  <aside class="col-md-3">
+                    <a href="#" class="img-wrap">
+                      <span class="badge badge-danger"> NEW </span>
+                      <img src="../assets/img/Ace-Web_101.png">
+                    </a>
+                  </aside> <!-- col.// -->
+                  <div class="col-md-6">
+                    <div class="info-main">
+                      <a href="#" class="h5 title"> NUTRICOOK </a>
+                      <div class="rating-wrap mb-3">
+                        <ul class="rating-stars">
+                          <li>
+                            <div class="gender-radio">
+                              <label class="custom-label" for="newaccount">Color:</label>
+                              <input type="radio" id="f-option" name="selector" checked="">
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="checkout-inner">
-                                <div class="billing-address">
-                                    <h4 class="heading-color ">Guest House</h4>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">First Name</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Last Name</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Pincode</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Locality</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Address</label>
-                                      </p>
-                                    </div>
+                          </li>
+                          <li class="">
+                            Size: 30 inch
+                          </li>
+                          <li style="width:80%" class="">
+                            QTY: 1
+                          </li>
   
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Landmark</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">City/District/Town</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                        <label for="shipping-first-name">Mobile No</label>
-                                      </p>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                      <p class="input-wrapper lg-half">
-                                        <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                        <label for="shipping-last-name">Alternate Mobile No</label>
-                                      </p>
-                                    </div>
-                                    </div>
-                                </div>
+  
+                        </ul>
+  
+                      </div> <!-- rating-wrap.// -->
+  
+                      <p> Orchid WaveRectangular Chafing Dish w/stand</p>
+                      <div class="price-wrap">
+  
+                        <span class="price h5"> $140 </span>
+                        <del class="price-old"> $198</del>
+                      </div> <!-- info-price-detail // -->
+                    </div> <!-- info-main.// -->
+                  </div> <!-- col.// -->
+                  <aside class="col-sm-3">
+                    <div class="info-aside">
+  
+  
+                      <p>
+                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i class="fa fa-file"></i> Download
+                          Invoice </a>
+                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
+                          Cancellation </a>
+  
+                        <a href="#" class="btn btn-primary order-btn btn-block">
+                          <span class="text">Track Order</span>
+                        </a>
+                      </p>
+                    </div> <!-- info-aside.// -->
+                  </aside> <!-- col.// -->
+                </div> <!-- row.// -->
+              </article> <!-- card-product .// -->
+              <article class="card card-product-list">
+                <div class="row no-gutters">
+                  <aside class="col-md-3">
+                    <a href="#" class="img-wrap">
+                      <span class="badge badge-danger"> NEW </span>
+                      <img src="../assets/img/product-3.jpg">
+                    </a>
+                  </aside> <!-- col.// -->
+                  <div class="col-md-6">
+                    <div class="info-main">
+                      <a href="#" class="h5 title"> Great product name goes here </a>
+                      <div class="rating-wrap mb-3">
+                        <ul class="rating-stars">
+                          <li>
+                            <div class="gender-radio">
+                              <label class="custom-label" for="newaccount">Color:</label>
+                              <input type="radio" id="f-option" name="selector" checked="">
                             </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade active show" id="orders-tab" role="tabpanel"
-                    aria-labelledby="orders-nav">
-                    <!-- ========================= SECTION PAGETOP ========================= -->
-  
-                    <div class="row orders-tab">
-                        <div class="col-md-6">
-                            <a href="#" class="btn btn-primary cancel-btn btn-block">Ongoing Orders </a>
-  
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#" class="btn btn-primary btn-block"> Cancelled Orders</a>
-                        </div>
-                    </div>
-  
-                    <article class="card card-product-list">
-                        <div class="row no-gutters">
-                            <aside class="col-md-3">
-                                <a href="#" class="img-wrap">
-                                    <span class="badge badge-danger"> NEW </span>
-                                    <img src="../assets/img/Ace-Web_95.png">
-                                </a>
-                            </aside> <!-- col.// -->
-                            <div class="col-md-6">
-                                <div class="info-main">
-                                    <a href="#" class="h5 title"> AIR PURIFIER
-                                    </a>
-                                    <div class="rating-wrap mb-3">
-                                        <ul class="rating-stars">
-                                            <li>
-                                                <div class="gender-radio">
-                                                    <label class="custom-label" for="newaccount">Color:</label>
-                                                    <input type="radio" name="selector" checked>
-                                                </div>
-                                            </li>
-                                            <li class="">
-                                              Size: 30 inch
-                                            </li>
-                                            <li style="width:80%" class="">
-                                                QTY: 1
-                                              </li>
+                          </li>
+                          <li class="">
+                            Size: 30 inch
+                          </li>
+                          <li style="width:80%" class="">
+                            QTY: 1
+                          </li>
   
   
-                                        </ul>
+                        </ul>
   
-                                    </div> <!-- rating-wrap.// -->
+                      </div> <!-- rating-wrap.// -->
   
-                                    <p> Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
-                                    <div class="price-wrap">
+                      <p> Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing
+                        elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi
+                        enim ad minim veniam </p>
+                      <div class="price-wrap">
   
-                                        <span class="price h5"> 300KWD </span>
-                                        <del class="price-old"> 400KWD</del>
-                                    </div> <!-- info-price-detail // -->
-                                </div> <!-- info-main.// -->
-                            </div> <!-- col.// -->
-                            <aside class="col-sm-3">
-                                <div class="info-aside">
-  
-  
-                                    <p>
-                                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i
-                                                class="fa fa-file"></i> Download Invoice </a>
-                                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
-                                            Cancellation </a>
-  
-                                        <a href="#" class="btn btn-primary order-btn btn-block">
-                                            <span class="text">Track Order</span>
-                                        </a>
-                                    </p>
-                                </div> <!-- info-aside.// -->
-                            </aside> <!-- col.// -->
-                        </div> <!-- row.// -->
-                    </article> <!-- card-product .// -->
+                        <span class="price h5"> $140 </span>
+                        <del class="price-old"> $198</del>
+                      </div> <!-- info-price-detail // -->
+                    </div> <!-- info-main.// -->
+                  </div> <!-- col.// -->
+                  <aside class="col-sm-3">
+                    <div class="info-aside">
   
   
-                    <article class="card card-product-list">
-                        <div class="row no-gutters">
-                            <aside class="col-md-3">
-                                <a href="#" class="img-wrap">
-                                    <span class="badge badge-danger"> NEW </span>
-                                    <img src="../assets/img/Ace-Web_97.png">
-                                </a>
-                            </aside> <!-- col.// -->
-                            <div class="col-md-6">
-                                <div class="info-main">
-                                    <a href="#" class="h5 title"> VACCUM </a>
-                                    <div class="rating-wrap mb-3">
-                                        <ul class="rating-stars">
-                                            <li>
-                                                <div class="gender-radio">
-                                                    <label class="custom-label" for="newaccount">Color:</label>
-                                                    <input type="radio" name="selector" checked>
-                                                </div>
-                                            </li>
-                                            <li class="">
-                                              Size: 30 inch
-                                            </li>
-                                            <li style="width:80%" class="">
-                                                QTY: 1
-                                              </li>
+                      <p>
+                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i class="fa fa-file"></i> Download
+                          Invoice </a>
+                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
+                          Cancellation </a>
   
+                        <a href="#" class="btn btn-primary order-btn btn-block">
+                          <span class="text">Track Order</span>
+                        </a>
+                      </p>
+                    </div> <!-- info-aside.// -->
+                  </aside> <!-- col.// -->
+                </div> <!-- row.// -->
+              </article> <!-- card-product .// -->
   
-                                        </ul>
-  
-                                    </div> <!-- rating-wrap.// -->
-  
-                                    <p> Weber Genesis II 3-burner Gas Grill, E310 </p>
-                                    <div class="price-wrap">
-  
-                                        <span class="price h5"> $140 </span>
-                                        <del class="price-old"> $198</del>
-                                    </div> <!-- info-price-detail // -->
-                                </div> <!-- info-main.// -->
-                            </div> <!-- col.// -->
-                            <aside class="col-sm-3">
-                                <div class="info-aside">
-  
-  
-                                    <p>
-                                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i
-                                                class="fa fa-file"></i> Download Invoice </a>
-                                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
-                                            Cancellation </a>
-  
-                                        <a href="#" class="btn btn-primary order-btn btn-block">
-                                            <span class="text">Track Order</span>
-                                        </a>
-                                    </p>
-                                </div> <!-- info-aside.// -->
-                            </aside> <!-- col.// -->
-                        </div> <!-- row.// -->
-                    </article> <!-- card-product .// -->
-                    <article class="card card-product-list">
-                        <div class="row no-gutters">
-                            <aside class="col-md-3">
-                                <a href="#" class="img-wrap">
-                                    <span class="badge badge-danger"> NEW </span>
-                                    <img src="../assets/img/Ace-Web_99.png">
-                                </a>
-                            </aside> <!-- col.// -->
-                            <div class="col-md-6">
-                                <div class="info-main">
-                                    <a href="#" class="h5 title"> BLENDER </a>
-                                    <div class="rating-wrap mb-3">
-                                        <ul class="rating-stars">
-                                            <li>
-                                                <div class="gender-radio">
-                                                    <label class="custom-label" for="newaccount">Color:</label>
-                                                    <input type="radio" id="f-option" name="selector" checked="">
-                                                </div>
-                                            </li>
-                                            <li class="">
-                                              Size: 30 inch
-                                            </li>
-                                            <li style="width:80%" class="">
-                                                QTY: 1
-                                              </li>
-  
-  
-                                        </ul>
-  
-                                    </div> <!-- rating-wrap.// -->
-  
-                                    <p> Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
-                                    <div class="price-wrap">
-  
-                                        <span class="price h5"> $140 </span>
-                                        <del class="price-old"> $198</del>
-                                    </div> <!-- info-price-detail // -->
-                                </div> <!-- info-main.// -->
-                            </div> <!-- col.// -->
-                            <aside class="col-sm-3">
-                                <div class="info-aside">
-  
-  
-                                    <p>
-                                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i
-                                                class="fa fa-file"></i> Download Invoice </a>
-                                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
-                                            Cancellation </a>
-  
-                                        <a href="#" class="btn btn-primary order-btn btn-block">
-                                            <span class="text">Track Order</span>
-                                        </a>
-                                    </p>
-                                </div> <!-- info-aside.// -->
-                            </aside> <!-- col.// -->
-                        </div> <!-- row.// -->
-                    </article> <!-- card-product .// -->
-                    <article class="card card-product-list">
-                        <div class="row no-gutters">
-                            <aside class="col-md-3">
-                                <a href="#" class="img-wrap">
-                                    <span class="badge badge-danger"> NEW </span>
-                                    <img src="../assets/img/Ace-Web_101.png">
-                                </a>
-                            </aside> <!-- col.// -->
-                            <div class="col-md-6">
-                                <div class="info-main">
-                                    <a href="#" class="h5 title"> NUTRICOOK </a>
-                                    <div class="rating-wrap mb-3">
-                                        <ul class="rating-stars">
-                                            <li>
-                                                <div class="gender-radio">
-                                                    <label class="custom-label" for="newaccount">Color:</label>
-                                                    <input type="radio" id="f-option" name="selector" checked="">
-                                                </div>
-                                            </li>
-                                            <li class="">
-                                              Size: 30 inch
-                                            </li>
-                                            <li style="width:80%" class="">
-                                                QTY: 1
-                                              </li>
-  
-  
-                                        </ul>
-  
-                                    </div> <!-- rating-wrap.// -->
-  
-                                    <p> Orchid WaveRectangular Chafing Dish w/stand</p>
-                                    <div class="price-wrap">
-  
-                                        <span class="price h5"> $140 </span>
-                                        <del class="price-old"> $198</del>
-                                    </div> <!-- info-price-detail // -->
-                                </div> <!-- info-main.// -->
-                            </div> <!-- col.// -->
-                            <aside class="col-sm-3">
-                                <div class="info-aside">
-  
-  
-                                    <p>
-                                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i
-                                                class="fa fa-file"></i> Download Invoice </a>
-                                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
-                                            Cancellation </a>
-  
-                                        <a href="#" class="btn btn-primary order-btn btn-block">
-                                            <span class="text">Track Order</span>
-                                        </a>
-                                    </p>
-                                </div> <!-- info-aside.// -->
-                            </aside> <!-- col.// -->
-                        </div> <!-- row.// -->
-                    </article> <!-- card-product .// -->
-                    <article class="card card-product-list">
-                        <div class="row no-gutters">
-                            <aside class="col-md-3">
-                                <a href="#" class="img-wrap">
-                                    <span class="badge badge-danger"> NEW </span>
-                                    <img src="../assets/img/product-3.jpg">
-                                </a>
-                            </aside> <!-- col.// -->
-                            <div class="col-md-6">
-                                <div class="info-main">
-                                    <a href="#" class="h5 title"> Great product name goes here </a>
-                                    <div class="rating-wrap mb-3">
-                                        <ul class="rating-stars">
-                                            <li>
-                                                <div class="gender-radio">
-                                                    <label class="custom-label" for="newaccount">Color:</label>
-                                                    <input type="radio" id="f-option" name="selector" checked="">
-                                                </div>
-                                            </li>
-                                            <li class="">
-                                              Size: 30 inch
-                                            </li>
-                                            <li style="width:80%" class="">
-                                                QTY: 1
-                                              </li>
-  
-  
-                                        </ul>
-  
-                                    </div> <!-- rating-wrap.// -->
-  
-                                    <p> Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing
-                                        elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi
-                                        enim ad minim veniam </p>
-                                    <div class="price-wrap">
-  
-                                        <span class="price h5"> $140 </span>
-                                        <del class="price-old"> $198</del>
-                                    </div> <!-- info-price-detail // -->
-                                </div> <!-- info-main.// -->
-                            </div> <!-- col.// -->
-                            <aside class="col-sm-3">
-                                <div class="info-aside">
-  
-  
-                                    <p>
-                                        <a href="#" class="btn btn-primary invoice-btn btn-block"><i
-                                                class="fa fa-file"></i> Download Invoice </a>
-                                        <a href="#" class="btn btn-primary cancel-btn btn-block"> Request
-                                            Cancellation </a>
-  
-                                        <a href="#" class="btn btn-primary order-btn btn-block">
-                                            <span class="text">Track Order</span>
-                                        </a>
-                                    </p>
-                                </div> <!-- info-aside.// -->
-                            </aside> <!-- col.// -->
-                        </div> <!-- row.// -->
-                    </article> <!-- card-product .// -->
-  
-                    </div>
-                    <!-- <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
+            </div>
+            <!-- <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
                         <div class="checkout">
   
                             <div class="row">
@@ -817,7 +778,7 @@
                         </div>
   
                     </div> -->
-                    <!-- <div class="tab-pane fade" id="profile-tab" role="tabpanel" aria-labelledby="profile-nav">
+            <!-- <div class="tab-pane fade" id="profile-tab" role="tabpanel" aria-labelledby="profile-nav">
                         <h4 class="heading-color ">Personal Information</h4>
                         <div class="row">
                             <div class="col-lg-12">
@@ -863,88 +824,88 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="tab-pane fade" id="account-tab" role="tabpanel" aria-labelledby="account-nav">
-                      <!-- Main Slider Start -->
+            <div class="tab-pane fade" id="account-tab" role="tabpanel" aria-labelledby="account-nav">
+              <!-- Main Slider Start -->
   
-                      <div class="container">
-                        <div class="row" style="background: #eae9e9;
+              <div class="container">
+                <div class="row" style="background: #eae9e9;
                         padding: 10px;
                         color: #000;">
-                          <div class="col-md-3">
-                            <a class="heading-a">My Wishilist (3)</a>
+                  <div class="col-md-3">
+                    <a class="heading-a">My Wishilist (3)</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container shopping-cart">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="shopping-cart">
+                      <div class="product">
+                        <div class="row">
+                          <div class="col-md-2">
+  
+                            <img src="../assets/img/Ace-Web_95.png" style="height: 150px;">
+                          </div>
+                          <div class="col-md-8" style="padding: 26px;">
+                            <div class="product-title">AIR PURIFIER</div>
+                            <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
+                            <h3>Total Amount: 300 KWD</h3>
+                          </div>
+                          <div class="col-md-2">
+                            <img src="../assets/img/remove.png" class="remove-img" style="float: right;
+                  height: 40px;">
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <div class="product">
+                        <div class="row">
+                          <div class="col-md-2">
+  
+                            <img src="../assets/img/Ace-Web_97.png" style="height: 150px;">
+                          </div>
+                          <div class="col-md-8" style="padding: 26px;">
+                            <div class="product-title">AIR PURIFIER</div>
+                            <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
+                            <h3>Total Amount: 300 KWD</h3>
+                          </div>
+                          <div class="col-md-2">
+                            <img src="../assets/img/remove.png" class="remove-img" style="float: right;
+                 height: 40px;">
                           </div>
                         </div>
                       </div>
-  <div class="container shopping-cart">
-    <div class="row">
-        <div class="col-md-12">
-           <div class="shopping-cart">
-             <div class="product">
-               <div class="row">
-                 <div class="col-md-2">
+                      <div class="product">
+                        <div class="row">
+                          <div class="col-md-2">
   
-                  <img src="../assets/img/Ace-Web_95.png" style="height: 150px;">
-                </div>
-                <div class="col-md-8" style="padding: 26px;">
-                  <div class="product-title">AIR PURIFIER</div>
-                  <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
-                  <h3>Total Amount: 300 KWD</h3>
-                </div>
-                <div class="col-md-2">
-                  <img src="../assets/img/remove.png" class="remove-img" style="float: right;
-                  height: 40px;">
-                   </div>
-               </div>
-  
-             </div>
-  
-             <div class="product">
-              <div class="row">
-                <div class="col-md-2">
-  
-                 <img src="../assets/img/Ace-Web_97.png" style="height: 150px;">
-               </div>
-               <div class="col-md-8" style="padding: 26px;">
-                 <div class="product-title">AIR PURIFIER</div>
-                 <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
-                 <h3>Total Amount: 300 KWD</h3>
-               </div>
-               <div class="col-md-2">
-                 <img src="../assets/img/remove.png" class="remove-img" style="float: right;
+                            <img src="../assets/img/Ace-Web_95.png" style="height: 150px;">
+                          </div>
+                          <div class="col-md-8" style="padding: 26px;">
+                            <div class="product-title">AIR PURIFIER</div>
+                            <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
+                            <h3>Total Amount: 300 KWD</h3>
+                          </div>
+                          <div class="col-md-2">
+                            <img src="../assets/img/remove.png" class="remove-img" style="float: right;
                  height: 40px;">
-                  </div>
-              </div>
-             </div>
-             <div class="product">
-              <div class="row">
-                <div class="col-md-2">
-  
-                 <img src="../assets/img/Ace-Web_95.png" style="height: 150px;">
-               </div>
-               <div class="col-md-8" style="padding: 26px;">
-                 <div class="product-title">AIR PURIFIER</div>
-                 <p class="product-description">Magic Bullet Blender Set, MB4-1012 (400 W , 11pcs)</p>
-                 <h3>Total Amount: 300 KWD</h3>
-               </div>
-               <div class="col-md-2">
-                 <img src="../assets/img/remove.png" class="remove-img" style="float: right;
-                 height: 40px;">
-                  </div>
-              </div>
-             </div>
-  
-             </div>
-        </div>
-  
-    </div>
-  
-   </div>
-       <!-- Category End-->
+                          </div>
+                        </div>
+                      </div>
   
                     </div>
+                  </div>
+  
                 </div>
+  
+              </div>
+              <!-- Category End-->
+  
             </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
   <!-- My Account End -->
