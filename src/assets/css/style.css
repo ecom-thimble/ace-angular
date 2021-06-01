@@ -3166,7 +3166,7 @@ height: 800px;
 }
 .cart-box{
   box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
-    margin-top: 23px;
+    /* margin-top: 23px; */
 }
 .coupon-box input{
   border-color: 1px solid #c5402a;

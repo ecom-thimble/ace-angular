@@ -43,6 +43,7 @@ import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.
       { path: 'cart2', component: CartAddressComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'cart3', component: CartTrackingComponent },
+      // { path: 'cart4', component: ProductAlertsComponent },
     ])
   ],
   declarations: [
