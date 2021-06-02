@@ -37,13 +37,14 @@
                       <h3 style="text-align: center;font-weight: bold;">Payment Details</h3>
                   <div class="payment-method">
 
+
                     <div class="row">
                       <div class="col-md-6">
                         <label for="card" class="method card">
                           <div class="radio-input">
                             <input id="card" type="radio" name="payment">
 
-                          <span style="font-weight: bold;"> Credit card</span>
+                          <span > Credit card</span>
                           </div>
                           <p style="color:gray">
                             Secure payment by credit card accepted cards Mastercard , Visa, Mastrao,American Express
@@ -54,7 +55,7 @@
                         <label for="card" class="method card">
                           <div class="radio-input">
                             <input id="paypal" type="radio" name="payment">
-                           <span style="font-weight: bold;"> PayPal</span>
+                           <span > PayPal</span>
                           </div>
                           <p style="color:gray">
                             Secure payment by credit card accepted cards Mastercard , Visa, Mastrao,American Express
@@ -66,37 +67,52 @@
 
 
                   </div>
-
-                  <form >
-
-                    <p>
-                     <input type="number" name="card_number" id="card_number" required placeholder="Card Number">
-                    </p>
+                  <div class="form">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-12">
 
-                        <i class="fa fa-expeditedssl"></i>  <input type="month" name="expiry_date" id="expiry_date" placeholder="Expiry Date" required>
-
-                      </div>
-                      <div class="col-md-6">
-
-                          <i class="fa fa-expeditedssl"></i> <input type="password" name="cvv" id="cvv" required placeholder="CVV Code">
+                          <div class="form-item">
+                            <input type="text" id="username" autocomplete="off" required value="*******132457">
+                            <label for="username">Card Number</label>
+                          </div>
 
                       </div>
                     </div>
-
-                    <p>
-                      <input type="text" name="name" required placeholder="Holder Name">
-                    </p>
                     <div class="row">
                       <div class="col-md-6">
-                      <div class="radio-input">
-                        <input id="paypal" type="radio" name="payment">
-                       <span> Remember card informations</span>
+
+                          <div class="form-item">
+                            <input type="text" id="username" autocomplete="off" required value="*****">
+                            <label for="username">Expiry Date</label>
+                          </div>
+
                       </div>
+                      <div class="col-md-6">
+
+                        <div class="form-item">
+                          <input type="text" id="username" autocomplete="off" required value="******">
+                          <label for="username">CVV Code</label>
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+
+                          <div class="form-item">
+                            <input type="text" id="username" autocomplete="off" required value="****">
+                            <label for="username">Holder Name</label>
+                          </div>
+
                       </div>
                     </div>
-                  </form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                        <label for="radio-1" class="radio-custom-label">Remember card informations</label>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
                 <div class="col-md-3 order-md-2 mb-4">
