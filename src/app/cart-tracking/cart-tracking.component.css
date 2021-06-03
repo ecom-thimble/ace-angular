@@ -42,7 +42,7 @@ color: #50cc87;
 
 .circle-desc{
   position: absolute;
-  top: 3em;
+  top: 5em;
   font-size: 1.125em;
   width: auto;
   max-width: 9.375em;
@@ -95,3 +95,22 @@ color: #50cc87;
      font-size:120%
   }
 }
+
+.product-track{
+  padding: 23px;
+}
+.tracking-bar{
+
+  padding: 55px;
+
+}
+
+.product-image {
+  float: left;
+  width: 18%;
+}
+.product-details {
+  float: left;
+  width: 34%;
+}
+

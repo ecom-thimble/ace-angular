@@ -21,6 +21,7 @@ import { WizardComponent } from './wizard/wizard.component';
 import { StepFormSelectorComponent } from './wizard/step-form-selector/step-form-selector.component';
 import { FormStepDirective } from './directives/form-step.directive';
 import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.
     FormsModule,
     RouterModule.forRoot([
       {
-        path: '', redirectTo: "/home", pathMatch: 'full'
+        path: '', redirectTo: "/login", pathMatch: 'full'
       },
       { path: 'home', component: HomeComponent },
       { path: 'products-detail', component: ProductDetailsComponent },
@@ -43,7 +44,9 @@ import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.
       { path: 'cart2', component: CartAddressComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'cart3', component: CartTrackingComponent },
-      // { path: 'cart4', component: ProductAlertsComponent },
+      { path: 'cart4', component: ProductAlertsComponent },
+      { path: 'login', component: LoginComponent },
+
     ])
   ],
   declarations: [
@@ -61,6 +64,7 @@ import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.
     CartInfoComponent,
     CartAddressComponent,
     WizardComponent,
+    LoginComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   // providers:[{provide: MatStepperIntl, useClass: MyIntl}],
