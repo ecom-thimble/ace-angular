@@ -2,8 +2,6 @@ import { Component , OnInit} from '@angular/core';
 // tslint:disable-next-line: only-arrow-functions
 declare function fatClientCheck(): any;
 declare function logo(): any;
-declare function category(): any;
-
 
 @Component({
   selector: 'app-home',
@@ -24,7 +22,6 @@ export class HomeComponent implements OnInit{
   public ngOnInit(): void {
     fatClientCheck();
     logo();
-    category();
   }
 
 }
