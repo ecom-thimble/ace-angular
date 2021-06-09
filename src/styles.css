@@ -236,7 +236,7 @@
   
   .nav-justified>li {
     display: table-cell;
-    width: 200px  ;
+    /* width: 200px  ; */
   }
   
   
