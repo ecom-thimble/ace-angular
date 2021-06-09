@@ -78,7 +78,7 @@ input[type="text"].open {
   color: #262c37;
   background: #fff;
 
-  box-shadow: inset 0 0 0 0.2rem #c5402a;
+  box-shadow: inset 0 0 0 0.2rem #D40029;
 }
 
 input[type="text"] ~ label {
@@ -86,7 +86,7 @@ input[type="text"] ~ label {
   left: 1rem;
   bottom: 1rem;
   width: 85%;
-  color: #c5402a;
+  color: #D40029;
   padding: 0 0.5em 0.5em;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;

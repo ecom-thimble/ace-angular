@@ -119,7 +119,7 @@ input{
 }
  .product .product-details .product-title {
 	 margin-right: 20px;
-	 font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+	 font-family: 'Roboto Slab Serif';
 }
  .product .product-details .product-description {
 	 margin: 5px 20px 5px 0;
@@ -133,7 +133,7 @@ input{
 	 padding: 4px 8px;
 	 background-color: #c66;
 	 color: #fff;
-	 font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+	 font-family: 'Roboto Slab Serif';
 	 font-size: 12px;
 	 border-radius: 3px;
 }
@@ -159,7 +159,7 @@ input{
 	 text-align: right;
 }
  .totals .totals-item-total {
-	 font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+	 font-family: 'Roboto Slab Serif';
 }
  .checkout {
 	width: 100%;

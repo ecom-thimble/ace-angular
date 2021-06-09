@@ -16,14 +16,14 @@
 .ellipse-icon i{
   float: right;
   padding: 22px;
-  color: #c5402a;
+  color: #D40029;
   font-size: 20px;
 }
 .color-gray{
   color: gray;
 }
 .headingLabel{
- color: #c43b2a;
+ color: #D40029;
 }
 .payment-method{
   display: inline-flex;
@@ -69,7 +69,7 @@
 .form-item input:valid + label{
   font-size: 11px;
   top: -5px;
-  color: #c5402a;
+  color: #D40029;
 }
 .form-item input:focus + label{
   color: blue
@@ -99,7 +99,7 @@ fieldset {
 }
 
 input::placeholder{
-  color: red;
+  color: #D40029;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -109,7 +109,7 @@ input::placeholder{
 }
 
 input[type="submit"] {
-  background-color: #0707ffd5;
+  background-color: #D40029;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -119,11 +119,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: hotpink;
+  background-color: D40029;
 }
 
 input[type="reset"]:hover {
-  background-color: hotpink;
+  background-color: D40029;
 }
 
 input[type="reset"] {
@@ -140,7 +140,7 @@ input[type="reset"] {
   padding: 12px;
 }
 .method span{
-  color: red;
+  color: #D40029;
   font-size: 17px;
 
 }
@@ -168,7 +168,7 @@ input[type="reset"] {
 
 .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
      background: #fff;
-    border: 2px solid #bf3726;
+    border: 2px solid #D40029;
     display: inline-block;
     vertical-align: middle;
     width: 27px;
@@ -192,7 +192,7 @@ input[type="reset"] {
 .radio-custom:checked + .radio-custom-label:before {
   content: "\f00c";
   font-family: 'FontAwesome';
-  color: #c5402a;
+  color: #D40029;
 }
 
 .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {

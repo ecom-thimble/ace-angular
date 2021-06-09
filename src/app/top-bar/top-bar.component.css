@@ -1,5 +1,5 @@
 .nav-top {
-  background: #eae9e9;
+  background: #eeeeee;
   min-height: 2rem;
 }
 .col-auto {
@@ -164,7 +164,7 @@ header .nav-icon-right .nav-item .wishlist {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .c-ico{
-  background: #eae9e9;
+  background: #eeeeee;
   width: 30px;
   height: 27px;
 }

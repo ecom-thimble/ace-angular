@@ -2,11 +2,6 @@
 /* ==== BASE STYLES ====*/
 /* ==================== GLOBAL STYLES ======================= */
 
-html {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-}
-
 /* ========================
 INCLUDE STYLES AND COMPONENTS
 ===================== */
@@ -260,7 +255,7 @@ article:after,
 }
 
 .bg-red {
-  background-color: #fa3434;
+  background-color: #D40029;
 }
 
 .bg-gradient-blue {
@@ -607,8 +602,8 @@ p:last-child {
   color: #969696;
 }
 .btn-light:hover {
-  background-color: #c43b2a;
-  border-color: #c43b2a;
+  background-color: #D40029;
+  border-color: #D40029;
 }
 
 .btn .text + i {
@@ -749,7 +744,7 @@ ul.row, ul.row-sm {
   width: 7px;
   border-radius: 100%;
   height: 7px;
-  background: #c5402a;
+  background: #D40029;
 }
 
 .list-check {
@@ -762,7 +757,7 @@ ul.row, ul.row-sm {
   margin-bottom: 7px;
 }
 .list-check > li::before {
-  font-family: "sans-serif";
+  font-family: "Roboto Slab Serif";
   font-weight: 900;
   font-size: 12px;
   color: #00b517;
@@ -792,7 +787,7 @@ ul.row, ul.row-sm {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  
+
 }
 .list-menu li {
   margin-bottom: 5px;
@@ -824,7 +819,7 @@ a[class*=card] {
   color: initial;
 }
 a[class*=card]:hover .title {
-  color: #c43b2a;
+  color: #D40029;
 }
 
 /* BASE STYLE FOR PRODUCT ITEM */
@@ -833,7 +828,7 @@ a[class*=card]:hover .title {
   display: block;
 }
 [class*=card-product] a.title:hover {
-  color: #c43b2a;
+  color: #D40029;
 }
 [class*=card-product] .badge {
   top: 10px;
@@ -859,7 +854,7 @@ a[class*=card]:hover .title {
 /* GRID STYLE PRODUCT ITEM */
 .card-product-grid {
   margin-bottom: 20px;
-  border: 3px solid #c5402a;
+  border: 3px solid #D40029;
 }
 .card-product-grid .img-wrap {
   border-radius: 0.2rem 0.2rem 0 0;
@@ -886,7 +881,7 @@ a[class*=card]:hover .title {
   color: #ccc;
 }
 .card-product-grid .topbar a:hover {
-  color: #c43b2a;
+  color: #D40029;
 }
 .card-product-grid .fix-height {
   height: 80px;
@@ -1057,12 +1052,12 @@ a[class*=card]:hover .title {
   text-align: center;
   border-radius: 3rem;
   color: #fff;
-  background-color: #fa3434;
+  background-color: #D40029;
 }
 
 .price {
   font-weight: 600;
-  color: #f03c02;
+  color: #D40029;
   margin-bottom: 10px;
 }
 
@@ -1070,7 +1065,7 @@ a[class*=card]:hover .title {
   color: #969696;
   margin-left: 3px;
   font-size: 85%;
-  
+
 }
 
 .icon-control {
@@ -1309,8 +1304,8 @@ a[class*=card]:hover .title {
   opacity: 0;
 }
 .btn-check input:checked ~ .btn {
-  border-color: #c5402a;
-  background-color: #c5402a;
+  border-color: #D40029;
+  background-color: #D40029;
   color: #fff;
 }
 .btn-check:hover:not(.active) {
@@ -1319,7 +1314,7 @@ a[class*=card]:hover .title {
 
 .js-check {
   position: relative;
-  color: #c5402a
+  color: #D40029
 }
 .js-check .title {
   margin-left: 22px;
@@ -1330,8 +1325,8 @@ a[class*=card]:hover .title {
   left: 18px;
 }
 .js-check.active {
-  border-color: #c5402a;
-  color: #c5402a
+  border-color: #D40029;
+  color: #D40029
 }
 .js-check:hover:not(.active) {
   border-color: #ccc;
@@ -1426,7 +1421,7 @@ a[class*=card]:hover .title {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #c5402a;
+  background-color: #D40029;
   border-color: #f6dfdc;
 }
 

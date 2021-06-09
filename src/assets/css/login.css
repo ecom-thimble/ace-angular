@@ -1,6 +1,6 @@
 
 body{
-  font-family: "Oswald-Bold,AdobeInvisFont,MyriadPro-Regular";
+  font-family: "Roboto Slab Serif";
 }
 .login-fg .form-container {
   color: #ccc;
@@ -114,7 +114,7 @@ body{
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto Slab Serif';
   border-radius: 50px;
   color: #d6d6d6;
 }
@@ -214,7 +214,7 @@ input[type="radio"] {
 .login-fg .login-section h3 {
   font-size: 20px;
   margin-bottom: 40px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto Slab Serif';
   font-weight: 400;
   color: #fff;
 }
