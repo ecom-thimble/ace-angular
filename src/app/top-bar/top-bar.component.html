@@ -9,7 +9,8 @@
         <ul class="nav">
           <li class="nav-item"><a title="Go to:  Register" class="nav-link">Register</a></li>
           <li class="nav-item"><a class="divider nav-link"><span></span></a></li>
-          <li class="nav-item"><a title="Go to:  Sign In" class="nav-link">Sign In</a></li>
+          <li class="nav-item"><a title="Go to:  Sign In" class="nav-link" data-toggle="modal"
+              data-target="#myModal">Sign In</a></li>
         </ul>
       </div>
     </div>
@@ -18,23 +19,24 @@
 <header class="" id="sticky-head">
   <div class="container-fluid">
     <div class="align-items-center justify-content-between row">
-      <div class="col-auto"><a class="navbar-brand" routerLink="/home"><img src="../assets/img/ace.png" alt="Ace"></a></div>
+      <div class="col-auto"><a class="navbar-brand"><img src="../assets/img/ace.png" alt="Ace"></a></div>
       <div class="search-outer col">
-        <div class="search"><a class="btn-search" role="presentation"> <i class="fa fa-search" aria-hidden="true"></i></a><input
-            placeholder="Search for products, brands and more.." type="text" class="form-control form-control"
-            value=""><a class="btn-clear" role="presentation"><i class="icon-close"></i></a></div>
+        <div class="search"><a class="btn-search" role="presentation"> <i class="fa fa-search"
+              aria-hidden="true"></i></a><input placeholder="Search for products, brands and more.." type="text"
+            class="form-control form-control" value=""><a class="btn-clear" role="presentation"><i
+              class="icon-close"></i></a></div>
       </div>
       <div class="col-auto">
         <ul class="nav-icon-right nav">
-          <li class="nav-item"> <i class="fa fa-user" style="font-size: 22px;color: #D40029;"></i></li>
-          <li class="nav-item"><i class="fa fa-heart" style="font-size: 22px;color: #D40029;"></i></li>
+          <li class="nav-item"> <i class="fa fa-user" style="font-size: 22px;color: #c5402a;"></i></li>
+          <li class="nav-item"><i class="fa fa-heart" style="font-size: 22px;color: #c5402a;"></i></li>
           <li class="nav-item c-ico"><i class="fa fa-shopping-cart"></i></li>
 
         </ul>
       </div>
     </div>
   </div>
- </header>
+</header>
 <!-- <div class="bottom-bar">
   <div class="container-fluid">
     <div class="row align-items-center">
@@ -75,6 +77,149 @@
     </div>
   </div>
 </div>  -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="form">
+
+        <ul class="tab-group">
+          <li class="tab active"><a href="#signup">SignIn</a></li>
+          <li class="tab"><a href="#login">SignUp</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="signup">
+            <div class="login-box">
+              <form>
+                <div class="signin">
+                  <h1 class="topline">Welcome back,</h1>
+                  <p class="login-text"> Please login to your account</p>
+                  <div class="input-field">
+                    <input id="email" type="email" name="email" formControlName="email" placeholder=" Email Address" />
+
+                  </div>
+
+                  <div class="input-field">
+                    <input id="password" type="password" name="password" formControlName="password"
+                      placeholder="Password" />
+
+                  </div>
+
+                  <div class="action">
+                    <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                    <label for="radio-1" class="radio-custom-label">Remember me</label>
+                    <a class="forgot">Forgot Password?</a>
+                  </div>
+                  <section id="uaSocialAuth" class="userAuth__contentWrapper">
+                    <div class="userAuth__socialBtns">
+                      <div>
+                        <div id="fb-root" class=" fb_reset">
+                          <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                            <div></div>
+                          </div>
+                        </div><button class="userAuth__btn userAuth__btn--fb"><i
+                            class="userAuth__icon userAuth__icon--fb"></i>Continue With Facebook</button>
+                      </div>
+                      <div><button id="userAuthGoogleBtn" class="userAuth__btn userAuth__btn--google"><i
+                            class="userAuth__icon userAuth__icon--google"></i>Contiue With Google</button></div>
+
+                    </div>
+                  </section>
+                  <div class="login-box-button">
+                    <button type="submit">
+                      <i class="fas fa-sign-in-alt"></i>
+                      Signin
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+
+          <div id="login">
+            <div class="login-box">
+              <form>
+                <div class="signin">
+                  <h1 class="topline">Register an account,</h1>
+                  <p class="login-text"> Create a new online account and join Ace Rewards or Link accounts (Joining or
+                    linking is optional)</p>
+                  <div class="input-field">
+                    <input id="password" type="text" name="username" formControlName="name" placeholder="Full name" />
+
+                  </div>
+                  <div class="input-field">
+                    <input id="email" type="email" name="email" formControlName="email" placeholder=" Email Address" />
+
+                  </div>
+
+                  <div class="input-field">
+                    <input id="password" type="password" name="password" formControlName="password"
+                      placeholder="Password" />
+
+                  </div>
+                  <section id="uaSocialAuth" class="userAuth__contentWrapper">
+                    <div class="gender_social">
+                      <div>
+                        <label>Gender</label>
+                        <div id="fb-root" class=" fb_reset">
+                          <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                            <div></div>
+                          </div>
+                        </div><button class="gender_btn  userAuth__btn--fb"><i
+                            class="userAuth__icon userAuth__icon--fb"></i>
+                          <div class="gender-radio"><label _ for="newaccount" class="custom-label"></label><input
+                              type="radio" name="selector" checked=""></div>Male
+                        </button>
+                      </div>
+                      <div><button id="userAuthGoogleBtn" class="gender_btn  userAuth__btn--google"><i
+                            class="userAuth__icon userAuth__icon--google"></i>
+                          <div class="gender-radio"><label _ for="newaccount" class="custom-label"></label><input
+                              type="radio" name="selector" checked=""></div>Female
+                        </button></div>
+
+                    </div>
+                  </section>
+
+                  <section id="uaSocialAuth" class="userAuth__contentWrapper">
+                    <div class="userAuth__socialBtns">
+                      <div>
+                        <div id="fb-root" class=" fb_reset">
+                          <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                            <div></div>
+                          </div>
+                        </div><button class="userAuth__btn userAuth__btn--fb"><i
+                            class="userAuth__icon userAuth__icon--fb"></i>Continue With Facebook</button>
+                      </div>
+                      <div><button id="userAuthGoogleBtn" class="userAuth__btn userAuth__btn--google"><i
+                            class="userAuth__icon userAuth__icon--google"></i>Contiue With Google</button></div>
+
+                    </div>
+                  </section>
+                  <div class="login-box-button">
+                    <button type="submit">
+                      <i class="fas fa-sign-in-alt"></i>
+                      SignUp
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div><!-- tab-content -->
+
+      </div> <!-- /form -->
+
+    </div>
+
+  </div>
+</div>
+
 <div id="topbar" class="d-flex align-items-center sub-nav">
   <div class="container">
     <div class="row">

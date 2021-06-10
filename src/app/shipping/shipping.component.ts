@@ -15,6 +15,7 @@ export class ShippingComponent implements OnInit {
 
   constructor(private cartService: CartService) {
   }
+
   public ngOnInit(): void {
     paymentForm();
 

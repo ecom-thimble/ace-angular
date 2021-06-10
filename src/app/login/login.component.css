@@ -61,7 +61,7 @@
   padding: 15px 17px;
   margin: 26px 0;
   border: none;
-  border-left: 5px solid #e45f79;
+  border-left: 5px solid #D40029;
   border-radius: 4px;
 }
 .login-box-button {
@@ -72,7 +72,7 @@
 }
 .login-box-button button {
   padding: 0.8rem 2rem;
-  background: #d74627;
+  background: #D40029;
   color: white;
   font-weight: 800;
   border: none;
@@ -87,10 +87,10 @@
 
 
 input::placeholder{
-  color: #e45f79;
+  color: #D40029;
 }
 .login-text{
-  color: #e45f79;
+  color: #D40029;
 }
 @media screen and (max-width: 776px) {
   .login-box {

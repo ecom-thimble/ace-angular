@@ -23,6 +23,7 @@ import { FormStepDirective } from './directives/form-step.directive';
 import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.component';
 import { LoginComponent } from './login/login.component';
 
+import { LoginModalComponent } from './login-modal/login-modal.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     RouterModule.forRoot([
       {
-        path: '', redirectTo: "/login", pathMatch: 'full'
+        path: '', redirectTo: "/home", pathMatch: 'full'
       },
       { path: 'home', component: HomeComponent },
       { path: 'products-detail', component: ProductDetailsComponent },
@@ -45,7 +46,7 @@ import { LoginComponent } from './login/login.component';
       { path: 'shipping', component: ShippingComponent },
       { path: 'cart3', component: CartTrackingComponent },
       { path: 'cart4', component: ProductAlertsComponent },
-      { path: 'login', component: LoginComponent },
+      { path: 'loginModal', component: LoginModalComponent },
 
     ])
   ],
@@ -65,6 +66,7 @@ import { LoginComponent } from './login/login.component';
     CartAddressComponent,
     WizardComponent,
     LoginComponent,
+    LoginModalComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   // providers:[{provide: MatStepperIntl, useClass: MyIntl}],

@@ -8,3 +8,7 @@
 .product{
   box-shadow: none;
 }
+.icon-flex{
+  display: flex;
+  padding: 7px 16px 0px 54px;
+}
