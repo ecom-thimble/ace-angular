@@ -351,6 +351,7 @@ width: 40%;
   }
 
   .product-btn {
+    text-align: center;
     align-self: flex-end;
     width: 100%;
 }
