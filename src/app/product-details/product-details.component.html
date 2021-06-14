@@ -15,8 +15,7 @@
                       <div class="row">
                         <div class="col-md-2">
                           <div class="thumbs-wrap">
-                            <a href="#" class="item-thumb"> <img src="../assets/img/Ace-Web_95.png"></a>
-                            <a href="#" class="item-thumb"> <img src="../assets/img/Ace-Web_95.png"></a>
+                            <a href="#" class="item-thumb active"> <img src="../assets/img/Ace-Web_95.png"></a>
                             <a href="#" class="item-thumb"> <img src="../assets/img/Ace-Web_95.png"></a>
                             <a href="#" class="item-thumb"> <img src="../assets/img/Ace-Web_95.png"></a>
                           </div> <!-- thumbs-wrap .// -->
@@ -24,9 +23,19 @@
                         <div class="col-md-10">
 
                           <div class="card img-big-wrap">
-                            <i class="fa fa-heart" style="padding: 13px;
-                                                            color: #c1c1c1;"></i>
+                            <div class="">
+
+                                                             <a><span class="new">New</span></a>
+                                                             <!-- <i class="fa fa-heart" style="padding: 13px;
+                                                             color: #c1c1c1;"></i> -->
+                                                             <a class="site-header__wishlist" title="Wishlist" href="/wishlist">
+                                                              <svg class="site-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                              <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"></path>
+                                                              </svg>
+                                                              </a>
+                                                            </div>
                             <a href="#"> <img src="../assets/img/Ace-Web_95.png"></a>
+
                           </div> <!-- card img-big-wrap.// -->
 
                         </div>
@@ -35,35 +44,26 @@
                     </article> <!-- gallery-wrap .end// -->
                   </aside>
                   <main class="col-md-6">
+
                     <article>
+
                       <!-- <a href="#" class="text-primary btn-link">Clothes</a> -->
                       <h3 class="title">Air Purifier</h3>
                       <p>Dyson Pure Link Tower TP03 Air Purifier</p>
                       <var class="price h4">2399 AED</var>
                       <div class="mb-4 row">
-                        <div class="col-md-4">
-                          <a href="#" class="btn btn-primary mr-1">Add to Bag</a>
+                        <div class="col-md-3 cart-div">
+                          <a href="#" class="cart"></a>
+                          <a href="#" class="add-cart">
+                            <span>ADD TO BAG</span> </a>
                         </div>
-                        <div class="col-md-3">
-                          <input class="form-control" placeholder="1" type="number">
+                        <div class="col-md-2">
+                          <div class="qty-input">
+                            <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                            <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                            <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                          </div>
                         </div>
-                      </div>
-                      <div>
-                        <ul class="rating-stars">
-                          <li class="stars-active">
-                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-
-                          </li>
-                          <li>
-                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <span class="label-rating mr-3 text-muted">7/10</span>
-                        <a href="#" class="btn-link  mr-3 text-muted"> <i class="fa fa-heart"></i> Save for later </a>
-                        <a href="#" class="btn-link text-muted"> <i class="fa fa-book-open"></i> Compare </a>
                       </div>
 
                       <hr>
