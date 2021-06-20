@@ -17,25 +17,24 @@ import { CartInfoComponent } from './cart-info/cart-info.component';
 import { CartAddressComponent } from './cart-address/cart-address.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CartComponent } from './cart/cart.component';
-import { WizardComponent } from './wizard/wizard.component';
-import { StepFormSelectorComponent } from './wizard/step-form-selector/step-form-selector.component';
-import { FormStepDirective } from './directives/form-step.directive';
-import { MutiStepFormComponent } from './wizard/multi-step-form/multi-step-form.component';
 import { LoginComponent } from './login/login.component';
-
+import { MatStepperModule } from '@angular/material/stepper';
 import { LoginModalComponent } from './login-modal/login-modal.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule,
-    FormsModule,
+    MatStepperModule,
+
     RouterModule.forRoot([
       {
-        path: '', redirectTo: "/home", pathMatch: 'full'
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
       },
       { path: 'home', component: HomeComponent },
       { path: 'products-detail', component: ProductDetailsComponent },
@@ -46,12 +45,10 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
       { path: 'shipping', component: ShippingComponent },
       { path: 'cart3', component: CartTrackingComponent },
       { path: 'cart4', component: ProductAlertsComponent },
-      { path: 'loginModal', component: LoginModalComponent },
-
+      { path: 'loginModal', component: LoginModalComponent }
     ])
   ],
   declarations: [
-    MutiStepFormComponent, FormStepDirective, StepFormSelectorComponent,
     AppComponent,
     TopBarComponent,
     ProductListComponent,
@@ -64,14 +61,11 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
     HomeComponent,
     CartInfoComponent,
     CartAddressComponent,
-    WizardComponent,
     LoginComponent,
-    LoginModalComponent,
+    LoginModalComponent
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   // providers:[{provide: MatStepperIntl, useClass: MyIntl}],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
