@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-
   selector: 'app-root',
-  templateUrl:
-   './app.component.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
@@ -13,7 +12,7 @@ export class AppComponent {
     age: 12,
     address: '',
     description: ''
-  }
+  };
 
   step_form = [
     {
@@ -35,18 +34,18 @@ export class AppComponent {
         description: this.form_data.description
       }
     }
-  ]
+  ];
 
-  start_step = 1
+  start_step = 1;
 
   setFormData(form_data) {
     this.form_data = {
       ...this.form_data,
       ...form_data
-    }
-    console.log('next',this.form_data)
+    };
+    console.log('next', this.form_data);
   }
-  finishAction(data:any){
-    console.log(this.form_data)
+  finishAction(data: any) {
+    console.log(this.form_data);
   }
 }

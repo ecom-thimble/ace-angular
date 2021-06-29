@@ -250,3 +250,27 @@ heart icon */
   margin: 5px;
 }
 /* End heart icon */
+
+.featured-margin {
+  margin-left: 25%;
+}
+
+@media (max-width: 992px) {
+  .featured-margin {
+    margin-left: 10%;
+  }
+  .icon-box .title {
+    padding: 0px;
+  }
+  .icon-flex {
+    display: flex;
+    padding: 4px 10px 0px 4px;
+  }
+  .icon-box .title a {
+    font-size: 19px;
+  }
+  .add-cart span {
+    padding: 14px;
+    font-size: 10px;
+  }
+}

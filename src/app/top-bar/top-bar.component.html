@@ -1,3 +1,8 @@
+<div class="language-switcher" id="language-selector"><ul class="nav"><li class="nav-item">
+  <a class="nav-link" style="color:#000" (click)="useLanguage('en')">Stay in <b>English</b></a></li>
+  <li class="nav-item"><a class="divider nav-link"><span></span></a></li><li class="nav-item">
+    <a class="nav-link" (click)="useLanguage('ar')"><b>اللغة العربية</b></a></li></ul><div>
+  </div></div>
 <div class="nav-top" id="head-tap">
   <div class="container-fluid">
     <div class="justify-content-center justify-content-lg-between row">
@@ -34,14 +39,14 @@
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
               <circle cx="12" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></circle>
               </svg>
-              <span>Account</span>
+              <span>{{"Account" | translate}}</span>
               </a>
           </li>
           <li class="nav-item"><a class="site-header__wishlist" title="Wishlist" href="/wishlist">
             <svg class="site-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"></path>
             </svg>
-            <span>Wishlist</span>
+            <span>{{"Wishlist" | translate}}</span>
             </a>
           </li>
           <li class="nav-item c-ico"><i class="fa fa-shopping-cart"></i></li>
@@ -237,20 +242,20 @@
     <div class="row">
       <div class="col-md-3 nav-margin-btm">
         <img src="../assets/img/categories.png" class="img-fluid nav-image" alt="">
-        <a class="heading-a">Shop by Categories</a>
+        <a class="heading-a">{{"Shop by Categories" | translate}}</a>
       </div>
       <div class="col-md-3 nav-margin-btm">
 
         <img src="../assets/img/categories.png" class="img-fluid nav-image" alt="">
-        <a class="heading-a">Shop by Brand</a>
+        <a class="heading-a">{{"Shop by Brand" | translate}}</a>
       </div>
       <div class="col-md-3 nav-margin-btm">
         <img src="../assets/img/Bulk Enquiries.png" class="img-fluid nav-image" alt="">
-        <a class="heading-a">Bulk Enquiries</a>
+        <a class="heading-a">{{"Bulk Enquiries" | translate}}</a>
       </div>
       <div class="col-md-3 nav-margin-btm">
         <img src="../assets/img/24_hours.png" class="img-fluid nav-image" alt="">
-        <a class="heading-a">Services</a>
+        <a class="heading-a">{{"Services" | translate}}</a>
       </div>
     </div>
   </div>

@@ -1,3 +1,36 @@
 .section-btm {
   margin-bottom: 50px;
 }
+
+.product-list-heading {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  .services .title {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .product-list-heading {
+    margin-top: 89px;
+  }
+}
+@media (max-width: 1200px) {
+  .blog .entry {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 414px) {
+  .services .icon-box {
+    height: 394px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .list-img {
+    height: 150px;
+  }
+}

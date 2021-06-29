@@ -1,4 +1,5 @@
-import { Component , OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 declare function loginModal(): any;
 
 @Component({
@@ -7,10 +8,14 @@ declare function loginModal(): any;
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
-  constructor() {}
-
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+  }
   public ngOnInit(): void {
     loginModal();
+  }
+  useLanguage(language: string) {
+    localStorage.setItem('lang', language);
+    this.translate.use(language);
   }
 }

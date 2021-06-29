@@ -625,3 +625,33 @@ heart icon */
   color: #9c9a9a;
 }
 /* end */
+
+.language-switcher {
+  background: #fff;
+  height: 2rem;
+  text-align: center;
+}
+
+.language-switcher .nav .nav-item .nav-link {
+  padding: 0.27rem 0.5rem;
+  max-width: 200px;
+}
+.language-switcher .nav .nav-item .nav-link b {
+  color: #004ba0;
+}
+
+.language-switcher .nav .nav-item .nav-link {
+  padding: 0.27rem 0.5rem;
+  max-width: 200px;
+}
+.language-switcher .nav .nav-item .divider span {
+  display: block;
+  margin-top: 0.25rem;
+  width: 1px;
+  height: 16px;
+  background: #1f2d3d;
+}
+.language-switcher .nav {
+  -moz-box-pack: center;
+  justify-content: center;
+}
